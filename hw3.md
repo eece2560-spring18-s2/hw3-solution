@@ -46,6 +46,16 @@ in `quick_sorter.h`.
 
 ## P4. Performance Analysis (2 pt.)
 
+In this part, we will use the provided timer to benchmark the performance of
+each sorting algorithms. You do not need to write any code. The main function
+already invokes the timer and report the execution time of the `Sort` function.
+What you need to do is to switch the algorithm used in the main function and
+record the time. You may want to run it for a few times and take the average.
+
+What are the results you have collected? How long time does it takes to sort the
+meetup groups by rating using each sorting algorithm? How do you interprete
+the results?
+
 ## P5. Extra Credit (2 pt.)
 
 In the extra credit problem, please search online for the concept of
