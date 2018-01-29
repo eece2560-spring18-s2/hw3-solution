@@ -4,6 +4,7 @@
 #include "group.h"
 #include "simple_sorter.h"
 #include "merge_sorter.h"
+#include "quick_sorter.h"
 
 class GroupRatingComarator : public algdb::Comparator<algdb::Group *> {
  public:
@@ -19,7 +20,7 @@ int main() {
   db.LoadData("../data");
 
   GroupRatingComarator comparator;
-  Sorter<Group *> *sorter = new MergeSorter<Group *>();
+  Sorter<Group *> *sorter = new QuickSorter<Group *>();
   sorter->Sort(db.groups, &comparator);
   delete sorter;
 
